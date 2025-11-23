@@ -7,6 +7,33 @@ The pipeline follows the Medallion Architecture (Bronze → Silver → Gold) and
 ![architecture](https://github.com/user-attachments/assets/ef6056b7-02b3-4355-aa71-77b08bf0a147)
 
 
+
+azure-data-engineering-project/
+│
+├── data/
+│   
+├── notebooks/
+│   ├── ingest_sales.py
+│   ├── bronze_layer.ipynb
+│   ├── silver_transform.py
+│   ├── gold_aggregations.py
+│   └── qa_checks.py
+│
+├── pipelines/
+│   ├── adf_arm_template.json
+│   ├── etl_pipeline.json
+│   └── linked_services.json
+│
+├── synapse/
+│   ├── create_external_table.sql
+│   ├── analytics_queries.sql
+│   └── gold_reporting.sql
+│
+│
+└── README.md
+
+
+
 Technologies Used
 Azure Data Factory (ADF) – Orchestration & ingestion
 Azure Data Lake Storage Gen2 (ADLS) – Central data lake
